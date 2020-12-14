@@ -24,7 +24,7 @@ export class Login2Component implements OnInit {
 
   }
   submitForm(value) {
-      this.httpClient.post(this.SERVER_URL, this.postData).toPromise().then(data => {
+      this.httpClient.post(this.SERVER_URL, value).toPromise().then(data => {
         console.log(data);
       });
   }
